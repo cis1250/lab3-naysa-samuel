@@ -6,7 +6,7 @@
 while True:
   user_input = input("Enter the number of terms you'd like to see:")
   # Validate that the input is a positive integer 
-  if int(user_input) 
+  if int(user_input): 
     num_terms = int(user_input)
 break 
   else
