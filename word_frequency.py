@@ -33,5 +33,28 @@ user_sentence = input("Enter a sentence: ")
 
 while (is_sentence(user_sentence) == False):
     print("This does not meet the criteria for a sentence.")
-    user_input = input("Enter a sentence: ")
+    user_sentence = input("Enter a sentence: ")
+
+# 2. Split the sentence
+if is_sentence(user_sentence):
+    split_words = user_sentence.split()
+    words = []
+    frequencies = []
+
+    for split_words in split_words:
+        punctuation = ",.!?"
+        word = split_words.strip(punctuation).lower() 
+
+        if word in words:
+            index = words.index(word)
+            frequencies[index] = frequencies[index] +1
+        else:
+            words.append(word)
+            frequencies.append(1)
+for i in range(len(words)):
+    print(words[i] + ": " + str(frequencies[i]))
+    
+
+    
+    
     
