@@ -9,6 +9,8 @@ while True:
   if user_input is digit(): 
     if user_input >0:
     num_terms = int(user_input)
+  else:
+    print("Invalid input. Positive integers only.")
     break 
   else:
     print("Invalid input. Positive integers only.")
