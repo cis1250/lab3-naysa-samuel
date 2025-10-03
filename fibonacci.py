@@ -7,18 +7,18 @@ while True:
   user_input = input("Enter the number of terms you'd like to see:")
   # Validate that the input is a positive integer 
   if user_input is digit(): 
+     num_terms = int(user_input)
     if user_input >0:
-    num_terms = int(user_input)
-  else:
-    print("Invalid input. Positive integers only.")
-    break 
-  else:
-    print("Invalid input. Positive integers only.")
+          break
+       else:
+          print("Invalid input. Positive integers only.") 
+    else:
+        print("Invalid input. Positive integers only.")
    # Use a for loop to print the Fibonacci sequence up to that many terms.
  a = 0
  b = 1
  for i in range (num_terms): 
-  print(a, end= ' ')
+  print(a, end=' ')
   a = b
   b = a + b
 
